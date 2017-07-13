@@ -1,0 +1,250 @@
+body{
+  //background-image: url("../images/1.jpg");
+  //background-repeat: no-repeat;
+  //background-size: 100%;
+}
+
+//one 选项卡
+.container{
+  border:1px solid #CCCCCC;
+}
+
+.content1{
+  width:350px;
+  height:260px;
+  border:1px solid #cccccc;
+  background-color:#F5F5F5;
+}
+
+.content2{
+  width:350px;
+  height:260px;
+  border:1px solid #cccccc;
+  background-color:white;
+}
+
+.content3{
+  width:350px;
+  height:260px;
+  border:1px solid #cccccc;
+  background-color:white;
+}
+
+.content4{
+  .content1;
+
+
+
+  background-color:#F5F5F5;
+}
+
+h4{
+  font-family: "Microsoft YaHei", Arial, Verdana, Helvetica, sans-serif;
+  span{
+    display:inline-block;
+    margin-top:40px;
+  }
+}
+
+
+//two选项卡
+.demo{padding: 1em 0;}
+a:hover,a:focus{
+  outline: none;
+  text-decoration: none;
+}
+.tab .nav-tabs{
+  //border: 1px solid #1fc1dd;
+}
+.tab .nav-tabs li{
+  margin: 0;
+}
+.tab .nav-tabs li a{
+  font-size: 14px;
+  color: #999898;
+  background: #fff;
+  margin: 0;
+  padding: 20px 25px;
+  border-radius: 0;
+  border: none;
+  //border-right: 1px solid #ddd;
+  text-transform: uppercase;
+  position: relative;
+}
+.tab .nav-tabs li a:hover{
+  border-top: none;
+  border-bottom: none;
+  //border-right-color: #ddd;
+}
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li.active a:hover{
+  color: #fff;
+  border: none;
+  background: #1fc1dd;
+  //border-right: 1px solid #ddd;
+}
+.tab .nav-tabs li.active a:before{
+  content: "";
+  width: 80%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.tab .nav-tabs li.active a:after{
+  content: "";
+  border-top: 10px solid #1fc1dd;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  bottom: -10px;
+  left: 43%;
+}
+.tab .tab-content{
+  font-size: 13px;
+  color: #999898;
+  line-height: 25px;
+  background: #fff;
+  padding: 20px;
+  //border: 1px solid #1fc1dd;
+  border-top: none;
+}
+.tab .tab-content h3{
+  font-size: 24px;
+  color: #999898;
+  margin-top: 0;
+}
+@media only screen and (max-width: 480px){
+  .tab .nav-tabs li{
+    width: 100%;
+    text-align: center;
+  }
+  .tab .nav-tabs li.active a,
+  .tab .nav-tabs li.active a:after,
+  .tab .nav-tabs li.active a:hover{
+    border: none;
+  }
+}
+
+//详细规则
+.table1{
+  display: flex;
+  justify-content: center;
+}
+.table1 ul{
+  float:left;
+  text-align:center;
+}
+
+.table1 li{
+  border-left:1px solid black;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+
+}
+
+.table1 ul:last-child{
+  border-right:1px solid black;
+}
+
+@media all and(max-width: 480px){
+  .table1 li{
+    line-height: 32px;
+    height:32px;
+    font-size: 12px;
+  }
+  .table1 ul:first-child>li{
+    width:80px;
+  }
+  .table1 ul:nth-of-type(2)>li{
+    width:80px;
+  }
+  .table1 ul:last-child>li{
+    width:150px;
+  }
+
+  .qiyue{
+    font-size: 15px;
+  }
+}
+
+
+@media all and(min-width:480px) and (max-width: 720px){
+  .table1 li{
+    line-height: 32px;
+    height:32px;
+    font-size: 12px;
+  }
+  .table1 ul:first-child>li{
+    width:100px;
+  }
+  .table1 ul:nth-of-type(2)>li{
+    width:100px;
+  }
+  .table1 ul:last-child>li{
+    width:170px;
+  }
+}
+
+@media all and(min-width:720px) and (max-width: 1120px){
+  .table1 li{
+    line-height: 32px;
+    height:32px;
+    font-size: 12px;
+  }
+  .table1 ul:first-child>li{
+    width:140px;
+  }
+  .table1 ul:nth-of-type(2)>li{
+    width:140px;
+  }
+  .table1 ul:last-child>li{
+    width:200px;
+  }
+}
+
+@media all and(min-width:1120px) and (max-width:1920px){
+  .table1 li{
+    line-height: 32px;
+    height:32px;
+    font-size: 12px;
+  }
+  .table1 ul:first-child>li{
+    width:200px;
+  }
+  .table1 ul:nth-of-type(2)>li{
+    width:200px;
+  }
+  .table1 ul:last-child>li{
+    width:250px;
+  }
+}
+@media all and(min-width:1920px) and (max-width:2100px){
+  .table1 li{
+    line-height: 32px;
+    height:32px;
+    font-size: 12px;
+  }
+  .table1 ul:first-child>li{
+    width:200px;
+  }
+  .table1 ul:nth-of-type(2)>li{
+    width:200px;
+  }
+  .table1 ul:last-child>li{
+    width:250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
